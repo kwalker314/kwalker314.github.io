@@ -85,6 +85,7 @@ nav {
   .intro-brace {
     font-size: 1200%;
     color: $alternate-color;
+    margin: -40px 0 -60px;
   }
 }
 
@@ -125,8 +126,9 @@ h1 {
 }
 
 h2 {
-  font: 180% $raleway;
-  font-weight: 200;
+  font: 170% $raleway;
+  font-weight: 300;
+  text-align: justify;
 }
 
 h3 {
