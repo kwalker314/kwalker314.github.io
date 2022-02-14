@@ -10,38 +10,80 @@ $link-color: #E26D5C;
 $header-color-light: #723D46;
 $header-color-dark: #472D30;
 
+//important IDs
+#intro {
+  padding-top: 60px;
+
+  .profile-img {
+    padding: 0 10px;
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+  }
+
+  .intro-block {
+    display: flex;
+  }
+
+  .intro-text {
+    padding: 0 10px;
+
+    p {
+      font: 170% $raleway;
+      font-weight: 300;
+    }
+  }
+
+  .intro-brace {
+    font-size: 1200%;
+    color: $alternate-color;
+    margin: -40px 0 -60px;
+  }
+}
+
+#skills {
+  li::marker {
+    color: $link-color;
+    opacity: 50%;
+    font-size: 130%;
+  }
+}
+
+section {
+  padding: 0 15px 20px;
+}
+
 nav {
   background-color: $header-color-dark;
 
   //"KW" icon on the far left of the navbar
   .home-initials {
-    color: $alternate-color;
-    background-color: $link-color;
-    font: 110% $playfair-display;
-    width: 45px;
-    height: 45px;
+    background-color: $alternate-color;
+    font: 120% $playfair-display;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.4s;
 
     &:hover {
-      color: $link-color;
-      background-color: $alternate-color;
+      color: $alternate-color;
+      background-color: $link-color;
     }
   }
 
-  //gotta space out the navbar items when they're collapsed just a tad!
-  .navbar-collapse.show, .navbar-collapse.collapsing {
-    padding-top: 8px;
+  .navbar-nav {
+    margin-top: 5px;
   }
 
-  //navbar links
+  //navbar links styling
   .nav-link {
     color: $alternate-color !important;
-    padding: 5px !important;
-    margin: 5px 3px;
+    font-weight: 400;
+    padding: 12px 5px !important;
+    margin: 6px 3px;
     border-radius: 10px;
 
     &:hover {
@@ -64,44 +106,13 @@ nav {
   }
 }
 
-.profile-img {
-  padding: 0 10px;
-  max-width: 200px;
-  height: auto;
-  align-self: center;
-}
-
-#intro {
-  padding-top: 60px;
-
-  .intro-block {
-    display: flex;
-  }
-
-  .intro-text {
-    padding: 0 10px;
-  }
-
-  .intro-brace {
-    font-size: 1200%;
-    color: $alternate-color;
-    margin: -40px 0 -60px;
-  }
-}
-
-#skills {
-
-}
-
+//generic tags
 body {
   font: 100% $raleway;
   color: $primary-color;
   background-color: $bg-color;
   padding: 10px;
-
-  & > div {
-    padding-bottom: 20px;
-  }
+  text-align: justify;
 
   ::selection {
     background-color: $header-color-dark;
@@ -111,6 +122,8 @@ body {
 
 a {
   color: $link-color;
+  transition: 0.3s;
+
   &:hover {
     color: $alternate-color;
   }
@@ -126,16 +139,22 @@ h1 {
 }
 
 h2 {
-  font: 170% $raleway;
-  font-weight: 300;
-  text-align: justify;
-}
-
-h3 {
-  font: 100% $playfair-display;
+  font: 150% $playfair-display;
+  font-weight: 600;
+  color: $header-color-light;
 }
 
 p {
   line-height: 150%;
   color: dark-grey;
+}
+
+hr {
+  width: 30%;
+  margin: auto;
+  justify-content: center;
+  border-top: 10px dotted;
+  border-color: $link-color;
+  opacity: 50%;
+  background-color: unset;
 }
