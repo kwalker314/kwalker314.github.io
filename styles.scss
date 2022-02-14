@@ -1,61 +1,20 @@
 $primary-color: #333;
 $playfair-display: 'Playfair Display', serif;
-$raleway: 'Raleway', sans-serif;
-
-//kudos to coolors for some awesome palettes!
+$raleway: 'Raleway', sans-serif; //kudos to coolors for some awesome palettes!
 //this color combo is from https://coolors.co/palette/c9cba3-ffe1a8-e26d5c-723d46-472d30
 $bg-color: #FFE1A8;
 $alternate-color: #C9CBA3;
 $link-color: #E26D5C;
 $header-color-light: #723D46;
-$header-color-dark: #472D30;
-
-//important IDs
-#intro {
-  padding-top: 60px;
-
-  .profile-img {
-    padding: 0 10px;
-    max-width: 200px;
-    height: auto;
-    align-self: center;
-  }
-
-  .intro-block {
-    display: flex;
-  }
-
-  .intro-text {
-    padding: 0 10px;
-
-    p {
-      font: 170% $raleway;
-      font-weight: 300;
-    }
-  }
-
-  .intro-brace {
-    font-size: 1200%;
-    color: $alternate-color;
-    margin: -40px 0 -60px;
-  }
-}
-
-#skills {
-  li::marker {
-    color: $link-color;
-    opacity: 50%;
-    font-size: 130%;
-  }
-}
+$header-color-dark: #472D30; //important IDs
+// HTML tags
 
 section {
-  padding: 0 15px 20px;
+  padding: 15px 25px 30px;
 }
 
 nav {
   background-color: $header-color-dark;
-
   //"KW" icon on the far left of the navbar
   .home-initials {
     background-color: $alternate-color;
@@ -81,7 +40,6 @@ nav {
   .navbar-nav {
     margin-top: 5px;
   }
-
   //navbar links styling
   .nav-link {
     color: $alternate-color !important;
@@ -94,7 +52,6 @@ nav {
       background-color: $header-color-light;
     }
   }
-
   //navbar hamburger menu icon
   .navbar-toggler {
     background-color: $alternate-color;
@@ -109,13 +66,12 @@ nav {
     }
   }
 }
-
 //generic tags
+
 body {
   font: 100% $raleway;
   color: $primary-color;
   background-color: $bg-color;
-  padding: 10px;
   text-align: justify;
 
   ::selection {
@@ -131,6 +87,7 @@ a {
   &:hover {
     color: $alternate-color;
   }
+
   &:visited {
     color: $header-color-light;
   }
@@ -161,4 +118,53 @@ hr {
   border-color: $link-color;
   opacity: 50%;
   background-color: unset;
+}
+
+footer {
+  padding: 0;
+  background-color: $alternate-color;
+  color: $header-color-light;
+
+  p {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+#intro {
+  padding-top: 60px;
+
+  .profile-img {
+    padding: 20px 10px 0;
+    max-width: 200px;
+    height: auto;
+    align-self: center;
+  }
+
+  .intro-block {
+    display: flex;
+  }
+
+  .intro-text {
+    padding: 20px 10px 0;
+
+    p {
+      font: 170% $raleway;
+      font-weight: 300;
+    }
+  }
+
+  .intro-brace {
+    font-size: 1200%;
+    color: $alternate-color;
+    margin: -40px 0 -60px;
+  }
+}
+
+#skills {
+  li::marker {
+    color: $link-color;
+    opacity: 50%;
+    font-size: 130%;
+  }
 }
