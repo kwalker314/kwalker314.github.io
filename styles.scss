@@ -10,19 +10,82 @@ $link-color: #E26D5C;
 $header-color-light: #723D46;
 $header-color-dark: #472D30;
 
-.home-initials {
-  font: 100% $playfair-display;
+nav {
+  background-color: $header-color-dark;
+
+  //"KW" icon on the far left of the navbar
+  .home-initials {
+    color: $alternate-color;
+    background-color: $link-color;
+    font: 110% $playfair-display;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+
+    &:hover {
+      color: $link-color;
+      background-color: $alternate-color;
+    }
+  }
+
+  //gotta space out the navbar items when they're collapsed just a tad!
+  .navbar-collapse.show, .navbar-collapse.collapsing {
+    padding-top: 8px;
+  }
+
+  //navbar links
+  .nav-link {
+    color: $alternate-color !important;
+    padding: 5px !important;
+    margin: 5px 3px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $header-color-light;
+    }
+  }
+
+  //navbar hamburger menu icon
+  .navbar-toggler {
+    background-color: $alternate-color;
+    color: $link-color;
+
+    div.hamburger-menu {
+      background-color: $link-color;
+      border-radius: 5px;
+      height: 3px;
+      width: 22px;
+      margin: 6px 0;
+    }
+  }
 }
 
 .profile-img {
-  margin: 50px;
-  max-width: 250px;
-  float: left;
+  padding: 0 10px;
+  max-width: 200px;
+  height: auto;
+  align-self: center;
 }
 
 #intro {
-  vertical-align: middle;
-  padding-top: 80px;
+  padding-top: 60px;
+
+  .intro-block {
+    display: flex;
+  }
+
+  .intro-text {
+    padding: 0 10px;
+  }
+
+  .intro-brace {
+    font-size: 1200%;
+    color: $alternate-color;
+  }
 }
 
 #skills {
@@ -34,7 +97,11 @@ body {
   color: $primary-color;
   background-color: $bg-color;
   padding: 10px;
-  
+
+  & > div {
+    padding-bottom: 20px;
+  }
+
   ::selection {
     background-color: $header-color-dark;
     color: $bg-color;
@@ -52,19 +119,21 @@ a {
 }
 
 h1 {
-  font: 400% $playfair-display;
+  font: 350% $playfair-display;
+  font-weight: 800;
   color: $header-color-light;
 }
 
-h2, h3 {
-  font: 200% $playfair-display;
+h2 {
+  font: 180% $raleway;
+  font-weight: 200;
+}
+
+h3 {
+  font: 100% $playfair-display;
 }
 
 p {
   line-height: 150%;
   color: dark-grey;
-}
-
-section {
-  padding-bottom: 20px;
 }
