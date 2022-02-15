@@ -4,10 +4,10 @@ $raleway: "Raleway", sans-serif;
 
 // colors
 $primary-color: #060606;
-$alternate-color: #7f5695;
-$bg-color: #fff2db;
-$link-color: #eb6a56;
-$header-color: #5a080d;
+$alternate-color: #36175a;
+$bg-color: #fdf2ff;
+$alternate-bg-color: #677511;
+$link-color: #abb028;
 
 // misc values
 $page-width: 66%;
@@ -22,12 +22,12 @@ section {
 
 // generic tags
 nav {
-  background-color: $header-color;
+  background-color: $alternate-bg-color;
   margin: auto;
 
   // "KW" icon on the far left of the navbar
   .home-initials {
-    background-color: $alternate-color;
+    background-color: $alternate-bg-color;
     font: 120% $playfair-display;
     font-weight: 600;
     width: 55px;
@@ -52,7 +52,7 @@ nav {
   // navbar links styling
   .nav-link {
     color: $link-color !important;
-    font-weight: 400;
+    font-weight: 500;
     padding: 12px 5px !important;
     margin: 6px 3px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ nav {
 
   // navbar hamburger menu icon
   .navbar-toggler {
-    background-color: $alternate-color;
+    background-color: $alternate-bg-color;
     color: $link-color;
 
     div.hamburger-menu {
@@ -86,7 +86,7 @@ body {
   margin-top: 80px;
 
   ::selection {
-    background-color: $header-color;
+    background-color: $alternate-bg-color;
     color: $bg-color;
   }
 }
@@ -100,20 +100,20 @@ a {
   }
 
   &:visited {
-    color: $header-color;
+    color: $alternate-bg-color;
   }
 }
 
 h1 {
   font: 350% $playfair-display;
   font-weight: 800;
-  color: $header-color;
+  color: $alternate-color;
 }
 
 h2 {
   font: 160% $playfair-display;
   font-weight: 800;
-  color: $header-color;
+  color: $alternate-bg-color;
 }
 
 hr {
@@ -121,13 +121,13 @@ hr {
   margin: auto;
   justify-content: center;
   border-top: 10px dotted;
-  border-color: $link-color;
+  border-color: $alternate-color;
   opacity: 50%;
   background-color: unset;
 }
 
 footer {
-  background-color: $header-color;
+  background-color: $alternate-bg-color;
   color: $link-color;
   text-align: center;
   align-self: center;
