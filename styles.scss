@@ -118,7 +118,7 @@ h2 {
 
 hr {
   width: 30%;
-  margin: auto;
+  margin: 25px auto;
   justify-content: center;
   border-top: 10px dotted;
   border-color: $alternate-color;
@@ -131,6 +131,13 @@ footer {
   color: $link-color;
   text-align: center;
   align-self: center;
+  margin-top: 50px;
+}
+
+li::marker {
+  color: $link-color;
+  opacity: 50%;
+  font-size: 130%;
 }
 
 #intro {
@@ -153,11 +160,6 @@ footer {
 }
 
 #skills {
-  li::marker {
-    color: $link-color;
-    opacity: 50%;
-    font-size: 130%;
-  }
 }
 
 .anchor:before {
