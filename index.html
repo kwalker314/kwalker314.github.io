@@ -10,23 +10,22 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;800&family=Raleway:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- navigation -->
-  <nav class="navbar fixed-top navbar-expand-md px-2">
-    <a href="." class="navbar-brand home-initials">KW</a>
+  <nav class="navbar fixed-top navbar-expand-lg px-3">
+    <a href="https://kwalker314.github.io/" class="navbar-brand home-initials">KW</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
       <div class="hamburger-menu div-1"></div>
       <div class="hamburger-menu div-2"></div>
       <div class="hamburger-menu div-3"></div>
     </button>
-    <div class="navbar-collapse collapse" id="navbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a href="#intro" class="nav-link">Intro</a></li>
+    <div class="navbar-collapse collapse justify-content-end" id="navbar">
+      <ul class="navbar-nav mt-1">
         <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
@@ -35,25 +34,17 @@
   </nav>
 
   <!-- actual page content, wow -->
-  <div id="intro" class="d-flex flex-wrap flex-md-nowrap align-content-center">
+  <section id="intro" class="anchor d-flex flex-wrap flex-lg-nowrap align-content-center mx-5 mx-md-auto">
     <img class="profile-img" src="profile-circle.png" alt="Kristin's partner (left) and Kristin (right)" title="Kristin (right) and Kristin's partner (left)" />
-    <div class="intro-block align-items-center">
-      <div class="intro-brace d-none d-md-inline">
-        <p>{</p>
-      </div>
-      <div class="intro-text">
-        <h1>Hi there, nice to meet you!</h1>
-        <p>
-          My name is Kristin Walker (she/her), and I've been working full-time as a software developer since 2019, with experience up and down the stack.
-        </p>
-      </div>
-      <div class="intro-brace d-none d-md-inline">
-        <p>}</p>
-      </div>
+    <div class="intro-text align-items-center">
+      <h1>Hi there, nice to meet you!</h1>
+      <p>
+        My name is Kristin Walker (she/her), and I've been working full-time as a software developer since 2019, with experience up and down the stack.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <section id="about-me">
+  <section id="about-me" class="anchor mx-5 mx-md-auto">
     <hr>
     <h2>About Me</h2>
     <p>
@@ -76,7 +67,7 @@
     </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="anchor mx-5 mx-md-auto">
     <hr>
     <h2>Skills</h2>
     <ul>
@@ -87,16 +78,14 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="anchor mx-5 mx-md-auto">
     <hr>
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:kristin.walker314@gmail.com?subject=Let's Connect!">kristin.walker314@gmail.com</a></p>
   </section>
 
   <footer class="footer bottom py-3">
-    <div class="">
-      <p>© Kristin Walker, 2022</p>
-    </div>
+    <p>© Kristin Walker, 2022</p>
   </footer>
 
   <!-- javascript for boostrap -->
