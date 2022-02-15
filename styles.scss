@@ -21,62 +21,6 @@ section {
 }
 
 // generic tags
-nav {
-  background-color: $alternate-bg-color;
-  margin: auto;
-
-  // "KW" icon on the far left of the navbar
-  .home-initials {
-    background-color: $alternate-bg-color;
-    font: 120% $playfair-display;
-    font-weight: 600;
-    width: 55px;
-    height: 55px;
-    border: 3px solid;
-    border-color: $link-color;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:visited {
-      color: $link-color;
-    }
-
-    &:hover {
-      color: $alternate-color;
-      background-color: $link-color;
-    }
-  }
-
-  // navbar links styling
-  .nav-link {
-    color: $link-color !important;
-    font-weight: 500;
-    padding: 12px 5px !important;
-    margin: 6px 3px;
-    border-radius: 10px;
-
-    &:hover {
-      background-color: $link-color;
-      color: $alternate-color !important;
-    }
-  }
-
-  // navbar hamburger menu icon
-  .navbar-toggler {
-    background-color: $alternate-bg-color;
-    color: $link-color;
-
-    div.hamburger-menu {
-      background-color: $link-color;
-      border-radius: 5px;
-      height: 3px;
-      width: 22px;
-      margin: 6px 0;
-    }
-  }
-}
 
 body {
   font: 120% $raleway;
@@ -89,55 +33,112 @@ body {
     background-color: $alternate-bg-color;
     color: $bg-color;
   }
-}
 
-a {
-  color: $link-color;
-  transition: 0.3s;
+  nav {
+    background-color: $alternate-bg-color;
+    margin: auto;
+  }
 
-  &:hover {
+  a {
+    color: $link-color;
+    transition: 0.3s;
+
+    &:hover {
+      color: $alternate-color;
+    }
+
+    &:visited {
+      color: $alternate-bg-color;
+    }
+  }
+
+  h1 {
+    font: 350% $playfair-display;
+    font-weight: 800;
     color: $alternate-color;
   }
 
-  &:visited {
+  h2 {
+    font: 160% $playfair-display;
+    font-weight: 800;
     color: $alternate-bg-color;
+  }
+
+  hr {
+    width: 30%;
+    margin: 25px auto;
+    justify-content: center;
+    border-top: 10px dotted;
+    border-color: $alternate-color;
+    opacity: 50%;
+    background-color: unset;
+  }
+
+  li::marker {
+    color: $link-color;
+    opacity: 50%;
+    font-size: 130%;
+  }
+
+  footer {
+    background-color: $alternate-bg-color;
+    color: $link-color;
+    text-align: center;
+    align-self: center;
+    margin-top: 50px;
   }
 }
 
-h1 {
-  font: 350% $playfair-display;
-  font-weight: 800;
-  color: $alternate-color;
-}
-
-h2 {
-  font: 160% $playfair-display;
-  font-weight: 800;
-  color: $alternate-bg-color;
-}
-
-hr {
-  width: 30%;
-  margin: 25px auto;
+// "KW" icon on the far left of the navbar
+.home-initials {
+  background-color: $alternate-bg-color;
+  font: 120% $playfair-display;
+  font-weight: 600;
+  width: 55px;
+  height: 55px;
+  border: 3px solid;
+  border-color: $link-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  border-top: 10px dotted;
-  border-color: $alternate-color;
-  opacity: 50%;
-  background-color: unset;
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover {
+    color: $alternate-color;
+    background-color: $link-color;
+  }
 }
 
-footer {
+// navbar links styling
+.nav-link {
+  color: $link-color !important;
+  font-weight: 500;
+  padding: 12px 5px !important;
+  margin: 6px 3px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $link-color;
+    color: $alternate-color !important;
+  }
+}
+
+// navbar hamburger menu icon
+.navbar-toggler {
   background-color: $alternate-bg-color;
   color: $link-color;
-  text-align: center;
-  align-self: center;
-  margin-top: 50px;
-}
 
-li::marker {
-  color: $link-color;
-  opacity: 50%;
-  font-size: 130%;
+  div.hamburger-menu {
+    background-color: $link-color;
+    border-radius: 5px;
+    height: 3px;
+    width: 22px;
+    margin: 6px 0;
+  }
 }
 
 #intro {
@@ -155,6 +156,7 @@ li::marker {
     p {
       font: 170% $raleway;
       font-weight: 300;
+      margin-bottom: 0;
     }
   }
 }
