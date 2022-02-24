@@ -3,8 +3,8 @@ $playfair-display: "Playfair Display", serif;
 $raleway: "Raleway", sans-serif;
 
 // colors
-$primary-color: #060606;
-$alternate-color: #36175a;
+$primary-color: #232323;
+$alternate-color: #4b2f6b;
 $bg-color: #fdf2ff;
 $alternate-bg-color: #677511;
 $link-color: #abb028;
@@ -36,6 +36,16 @@ body {
     margin: 15px auto;
     max-width: 700px;
     line-height: 1.9em;
+
+    & > hr {
+      width: 30%;
+      margin: 20px auto;
+      justify-content: center;
+      border-top: 10px dotted;
+      border-color: $link-color;
+      opacity: 70%;
+      background-color: unset;
+    }
   }
 
   i {
@@ -65,29 +75,29 @@ body {
     font: 190% $playfair-display;
     font-weight: 800;
     color: $alternate-bg-color;
+    margin-bottom: 20px;
   }
 
   h3 {
     color: $alternate-color;
-    opacity: 0.8;
-    padding-top: 20px;
+    font-weight: 600;
     font: 130% $raleway;
   }
 
-  hr {
-    width: 30%;
-    margin: 25px auto;
-    justify-content: center;
-    border-top: 10px dotted;
-    border-color: $alternate-color;
-    opacity: 50%;
-    background-color: unset;
+  h4 {
+    font-weight: 500;
+    font-size: 110%;
   }
 
   li::marker {
     color: $link-color;
     opacity: 50%;
     font-size: 130%;
+  }
+
+  strong {
+    color: $alternate-bg-color;
+    font-size: 1.2em;
   }
 
   footer {
@@ -173,17 +183,15 @@ body {
 
 #experience,
 #education {
-  .experience-dates {
+  .experience-summary {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
+    color: $alternate-color;
 
     h3 {
-      margin: unset;
-      padding: unset;
-      min-width: 260px;
+      min-width: 320px;
     }
 
     p {
@@ -194,6 +202,7 @@ body {
 
 #contact {
   .contact-method {
+    padding: 20px;
     min-width: 150px;
     min-height: 150px;
     font-size: 140%;
@@ -229,8 +238,8 @@ body {
     }
 
     &:hover:after {
-      width: 100%;
-      height: 100%;
+      width: 140px;
+      height: 140px;
       transition: all $transition-time cubic-bezier(0.58, -0.45, 0.47, 1.4);
     }
   }
@@ -246,6 +255,7 @@ body {
   margin-top: $navbar-offset * -1;
 }
 
+// accessibility!
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto;
